@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+header{
+    width: 100%;
+    position:fixed;
+    top: 0;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    z-index: 1000;
+    backdrop-filter: blur(8px);
+    
+}
+
+.logo{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: orange;
+}
+
+.logo span{
+    color: white;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 500;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #00e0ff;
+}
+.navbar a:hover{
+    color: #0ef;
+}
+
+.first-section{
+    background-image: url(img1.png);
+    min-height: 100%;
+}
+
+.second-section{
+    background-image: url(img2.png);
+    min-height: 400px;
+}
+
+.third-section{
+    background-image: url(img3.png);
+    min-height: 400px;
+}
+
+.forth-section{
+    background-image: url(img4.png);
+    min-height: 400px;
+}
+
+.first-section,
+.second-section,
+.third-section,
+.forth-section{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+.first-section,
+.second-section,
+.third-section,
+.forth-section:hover{
+    transition: calc(0);
+    opacity: 1;
+}
+
+.ptext{
+    position: absolute;
+    top: 40%;
+    width: 80%;
+    text-align: center;
+    padding: 20px;
+    font-size: 2vw;
+    margin-left: 80px;
+    background: rgba(0,0,0,0.4);
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.textBg{
+    line-height: 1.5;
+    color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+.section-bg{
+    padding: 50px 80px;
+    text-align: center;
+    background: rgba(0,0,0,0.9);
+    color: white;
+    
+}
+
+
+@media (max-width:900px){
+    .first-section{
+        width: 50%;
+    }
+}
+
+@media (max-width:400px){
+    .first-section{
+        width: 100%;
+    }
+}
