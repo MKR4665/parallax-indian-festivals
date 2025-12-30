@@ -4,65 +4,91 @@
     box-sizing: border-box;
 }
 
-html,body{
-    width: 100%;
-    height: calc(100% - 100px);
-    font-size: 16px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 400;
-    line-height: 1.8em;
+
+/* style header Section */
+.header{
+    background-color: rgb(26, 197, 189);
+    position: sticky;
+    top: 0;
 }
 
-header{
-    position: relative;
-    height: 100px;
-    width: 100%;
-    top: 0;
-    background-color: rgba(0,0,0,0.7);
+.container{
+    max-width: 85%;
+    padding-inline: 15px;
+    margin: auto;
+    padding-block: 10px;
+}
+.navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 3vw;
 }
 
-header .logo{
-    font-size: 1.7rem;
-    font-weight: 700;
-    color: orange;
-}
-
-.navbar{
+.logo{
     display: flex;
-    gap: 4vw;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0 10px;
+    align-items: center;
+}
+.logo div img{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-position: top;
+}
+
+.logo h2{
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.nav-group{
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
-header .logo{
-    font-size: 2vw;
-    font-weight: 700;
-    color: orange;
+.nav-list{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 0 30px;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-header .logo span{
-    color: white;
-}
-
-.navbar a{
+.nav-list li a{
     text-decoration: none;
     color: white;
-    transition: 0.3s;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
 }
 
-.navbar i{
-    font-weight: 900;
+.nav-list li a:hover{
+    color: rgb(214, 131, 6);
+    transform: scale(1.1);
+}
+
+.nav-list li button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-list li button i{
+    display: inline-block;
     color: white;
-    display: none;
+    font-size: 1.2rem;
+    background: none;
+    
 }
-
-.navbar a:hover{
-    color: #00e0ff;
-}
-
 
 .first-section{
     background-image: url(img1.png);
@@ -134,32 +160,3 @@ header .logo span{
     
 }
 
-
-@media (max-width:900px){
-    
-    /* .first-section{
-        width: 50%;
-    } */
-}
-
-@media (max-width:600px){
-    header{
-        background-color: lightseagreen;
-        padding: 0 5vw;
-        height: 60px;
-    }
-    header .logo{
-        font-size: 6vw;
-    }
-    .navbar a{
-        font-size: 4vw;
-        display: none;
-    }
-    .navbar i{
-        display: block;
-        font-size: 6vw;
-    }
-    /* .first-section{
-        width: 100%;
-    } */
-}
