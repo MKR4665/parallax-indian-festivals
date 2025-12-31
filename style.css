@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+@font-face{
+	font-family: Calibri;
+	src: url('../Parallax website/font/calibri/Calibribold.ttf');
+	font-weight:900;
+	font-style:normal;
+}
+
+
 body{
     scroll-behavior: smooth;
     position: relative;
@@ -48,6 +56,7 @@ body{
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 2px;
+    font-family: Calibri;
 }
 
 .nav-group{
@@ -70,7 +79,8 @@ body{
     text-decoration: none;
     color: white;
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 700;
+    font-family: Calibri;
     text-transform: uppercase;
     transition: all 0.3s ease;
 }
@@ -168,7 +178,7 @@ body{
 }
 
 .textBg{
-    line-height: 4rem;
+    line-height: 3rem;
     color: whitesmoke;
     margin-inline: -20px;
     text-align: center;
@@ -185,6 +195,36 @@ body{
     text-align: center;
     background: rgba(0,0,0,0.9);
     color: white;
+    font-family: Calibri;
     
 }
 
+
+@media screen and (max-width:480px){
+    .nav-list{
+        display: none;
+    }
+    .first-section{
+        height: auto;
+    }
+    .header{
+        height: auto;
+    }
+    .logo h2{
+        font-size: 1.5rem;
+    }
+    .logo div img{
+        width: 50px;
+        height: 50px;
+    }
+    .second-section{
+        height: auto;
+    }
+    .third-section{
+        height: auto;
+    }
+    .forth-section{
+        height: auto;
+        
+    }
+}
